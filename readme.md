@@ -7,5 +7,4 @@ Download the normal script or the min script they do the same thing
 <script src="./trimmyFormat.min.js">
 <br>
 
-## Why
 my friend theta needed this for their game
