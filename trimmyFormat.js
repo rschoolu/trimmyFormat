@@ -5,10 +5,7 @@ function trimmyFormat(number,shortExtensions,formatThousands) {
         return result;
       };
     let formattedNumber = Intl.NumberFormat().format(number)
-    let extensions = ['', 'K', 'M', 'B', 't', 'qdr', 'qnt', 'sxt', 'spt', 'oct', 'nni', 'dci','ndci','dodci','trdci','qutrdci','qnqadeci','sxdci','sptdci','octdci','nvndci','vi','unvi']
-    if (shortExtensions == false) {
-        extensions = ['', ' thousand', ' million', ' billion', ' trillion', ' quadrillion', ' quintillion', ' sextillion', ' septillion', ' octillion', ' nonillion', ' decillion', ' undecillion',' duodecillion',' tredecillion',' quattuordecillion',' quinquadecillion',' sexdecillion',' septendecillion',' octodecillion',' novendecillion',' vigintillion',' unvigintillion']
-    }
+    let extensions = ['', ' thousand', ' million', ' billion', ' trillion', ' quadrillion', ' quintillion', ' sextillion', ' septillion', ' octillion', ' nonillion', ' decillion', ' undecillion',' duodecillion',' tredecillion',' quattuordecillion',' quinquadecillion',' sexdecillion',' septendecillion',' octodecillion',' novendecillion',' vigintillion',' unvigintillion',' duovigintillion', ' trevigintillion', ' quattuorvigintillion', ' quinvigintillion', ' sexvigintillion', ' septenvigintillion', ' octovigintillion', ' novemvigintillion', ' trigintillion']
     let requiredExtensions = 1;
     if (formatThousands == false) {
     	requiredExtensions = 2;
